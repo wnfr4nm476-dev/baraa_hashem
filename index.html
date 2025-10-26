@@ -1,109 +1,130 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="مدرسة النجاة بنين في السالمية، الكويت - التعليم، التميز، والقيم الإسلامية.">
-<meta name="keywords" content="مدرسة النجاة، تعليم، الكويت، السالمية، بنين، الأنشطة، الأخبار، القيم الإسلامية">
-<title>مدرسة النجاة بنين - السالمية</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="مدرسة النجاة بنين في السالمية، الكويت - التعليم، التميز، والقيم الإسلامية." />
+  <meta name="keywords" content="مدرسة النجاة، تعليم، الكويت، السالمية، بنين، الأنشطة، الأخبار، القيم الإسلامية">
+  <meta name="author" content="مدرسة النجاة بنين – السالمية">
+  <meta property="og:title" content="مدرسة النجاة بنين – السالمية">
+  <meta property="og:description" content="مدرسة النجاة بنين في السالمية - التميز في التعليم وغرس القيم الإسلامية.">
+  <meta property="og:image" content="images/alnajat logo.jpg">
+  <meta property="og:type" content="website">
+  <title>مدرسة النجاة بنين - السالمية</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<style>
-* {box-sizing: border-box; scroll-behavior: smooth;}
-body {font-family: "Cairo", sans-serif; margin:0; direction:rtl; background-color:#f9fafc; color:#333;}
-:root {
-  --main-blue: #012d52;
-  --light-blue: #00bcd4;
-  --accent: #e5a100;
-  --dark-blue: #001f3f;
-}
+  <style>
+    * {box-sizing: border-box; scroll-behavior: smooth;}
+    body {font-family: "Cairo", sans-serif; margin:0; direction:rtl; background-color:#f9fafc; color:#333;}
+    :root {
+      --main-blue: #012d52;
+      --light-blue: #00bcd4;
+      --accent: #e5a100;
+      --dark-blue: #001f3f;
+      --section-bg: #f0f4f8;
+    }
 
-header {
-  background: linear-gradient(120deg, var(--main-blue) 0%, var(--light-blue) 100%);
-  color: white; text-align: center; padding: 50px 20px; position: relative;
-}
-header::after {
-  content: "";
-  position: absolute; bottom:0; left:0; width:100%; height:6px; background-color:var(--accent);
-}
-header img {width:110px; height:auto; margin-bottom:10px;}
-header h1 {font-size:2.4em; margin:10px 0;}
-header p {font-size:1.1em;}
+    header {
+      background: linear-gradient(120deg, var(--main-blue) 0%, var(--light-blue) 100%);
+      color: white; text-align: center; padding: 50px 20px; position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute; bottom:0; left:0; width:100%; height:6px; background-color:var(--accent);
+    }
+    header img {width:110px; height:auto; margin-bottom:10px;}
+    header h1 {font-size:2.4em; margin:10px 0;}
+    header p {font-size:1.1em;}
 
-nav {
-  position: sticky; top:0; background-color:var(--dark-blue);
-  display:flex; justify-content:center; flex-wrap:wrap; z-index:1000;
-}
-nav a {
-  color:white; text-decoration:none; padding:15px 25px; font-weight:600; transition: background 0.3s, color 0.3s;
-}
-nav a:hover, nav a.active {
-  background-color:#014d7a; color:var(--accent);
-}
+    nav {
+      position: sticky; top:0; background-color:var(--dark-blue);
+      display:flex; justify-content:center; flex-wrap:wrap; z-index:1000;
+    }
+    nav a {
+      color:white; text-decoration:none; padding:15px 25px;
+      font-weight:600; transition: background 0.3s, color 0.3s;
+    }
+    nav a:hover, nav a.active {
+      background-color:#014d7a; color:var(--accent);
+    }
 
-.container {max-width:1100px; margin:40px auto; background:white; padding:35px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+    .container {max-width:1100px; margin:40px auto; background:white; padding:35px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.08);}
 
-h2 {color:var(--main-blue); border-right:5px solid var(--accent); padding-right:12px; margin-bottom:15px;}
-p, ul {line-height:1.8; font-size:1.05em;}
-ul {list-style-type: square; padding-right:25px;}
+    h2 {
+      color:var(--main-blue); border-right:5px solid var(--accent); padding-right:12px; margin-bottom:15px;
+    }
 
-.gallery {
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; margin-top:20px;
-}
-.gallery img {
-  width:100%; height:200px; object-fit:cover; border-radius:10px;
-  border:3px solid #eef2f5; opacity:0; transition: opacity 0.5s ease, transform 0.3s, box-shadow 0.3s;
-}
-.gallery img.loaded {opacity:1;}
-.gallery img:hover {transform: scale(1.05); box-shadow:0 6px 20px rgba(0,0,0,0.15);}
+    p, ul {line-height:1.8; font-size:1.05em;}
+    ul {list-style-type: square; padding-right:25px;}
 
-.news-grid {
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:20px; margin-top:25px;
-}
-.news-card {
-  background:#fdfdfd; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1);
-  overflow:hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor:pointer;
-}
-.news-card:hover {transform:translateY(-6px); box-shadow:0 6px 18px rgba(0,0,0,0.15);}
-.news-card img {width:100%; height:200px; object-fit:cover;}
-.news-card .content {padding:15px 18px;}
-.news-card h3 {color:var(--main-blue); font-size:1.2em; margin:0 0 8px;}
-.news-card p {font-size:0.95em; color:#555; margin-bottom:10px;}
-.news-card .date {font-size:0.85em; color:#999;}
+   
+    .gallery {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; margin-top:20px;
+    }
+    .gallery img {
+      width:100%; height:300px; object-fit:cover; border-radius:10px;
+      border:3px solid #eef2f5; opacity:0; transition: opacity 0.8s ease, transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img.loaded {opacity:1;}
+    .gallery img:hover {transform: scale(1.05); box-shadow:0 6px 20px rgba(0,0,0,0.15);}
 
-.map-container {border:2px solid #ddd; border-radius:10px; overflow:hidden;}
+    .news-grid {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px; margin-top:25px;
+    }
+    .news-card {
+      background:#fdfdfd; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1);
+      overflow:hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor:pointer;
+    }
+    .news-card:hover {transform:translateY(-6px); box-shadow:0 6px 18px rgba(0,0,0,0.15);}
+    .news-card img {width:100%; height:300px; object-fit:cover;}
+    .news-card .content {padding:15px 18px;}
+    .news-card h3 {color:var(--main-blue); font-size:1.2em; margin:0 0 8px;}
+    .news-card p {font-size:0.95em; color:#555; margin-bottom:10px;}
+    .news-card .date {font-size:0.85em; color:#999;}
 
-footer {background-color:var(--dark-blue); color:white; text-align:center; padding:25px; font-size:0.95em;}
-footer a {color:var(--accent); text-decoration:none; margin:0 8px; transition:color 0.3s;}
-footer a:hover {color:white;}
+    .map-container {border:2px solid #ddd; border-radius:10px; overflow:hidden;}
 
-#topBtn, #homeBtn {
-  position:fixed; bottom:25px; width:45px; height:45px;
-  border:none; border-radius:50%; cursor:pointer; font-size:20px; z-index:999;
-  color:white; display:flex; align-items:center; justify-content:center;
-  box-shadow:0 4px 10px rgba(0,0,0,0.2); opacity:0; transition: opacity 0.3s;
-}
-#topBtn {left:25px; background-color:#0097a7;}
-#homeBtn {right:25px; background-color:var(--main-blue);}
-#topBtn.show, #homeBtn.show {opacity:1;}
-#topBtn:hover {background-color:#007b83;}
-#homeBtn:hover {background-color:#014d7a;}
+    footer {background-color:var(--dark-blue); color:white; text-align:center; padding:25px; font-size:0.95em;}
+    footer a {color:var(--accent); text-decoration:none; margin:0 8px; transition:color 0.3s;}
+    footer a:hover {color:white;}
 
-.page {display:block;}
-.hidden {display:none;}
+    
+    #topBtn, #homeBtn {
+      position:fixed; bottom:25px; width:45px; height:45px;
+      border:none; border-radius:50%; cursor:pointer; font-size:20px; z-index:999;
+      color:white; display:flex; align-items:center; justify-content:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2); opacity:0; transition: opacity 0.3s;
+    }
+    #topBtn {left:25px; background-color:#0097a7;}
+    #homeBtn {right:25px; background-color:var(--main-blue);}
+    #topBtn.show, #homeBtn.show {opacity:1;}
+    #topBtn:hover {background-color:#007b83;}
+    #homeBtn:hover {background-color:#014d7a;}
 
-.fade-up {opacity:0; transform:translateY(30px); transition:0.8s;}
-.fade-up.visible {opacity:1; transform:translateY(0);}
+    .page {display:block;}
+    .hidden {display:none;}
 
-@media (max-width:768px) {
-  header h1 {font-size:1.8em;}
-  nav a {padding:12px 10px; font-size:0.95em;}
-  .gallery img, .news-card img {height:180px;}
-}
-</style>
+    #prayer-article video {
+      width:45%;
+      max-width:300px;
+      border-radius:12px;
+      margin:15px auto;
+      display:block;
+      box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    }
+    @media (max-width:768px) {
+      header h1 {font-size:1.8em;}
+      nav a {padding:12px 10px; font-size:0.95em;}
+      #prayer-article video {width:80%; max-width:250px;}
+    }
+
+    .fade-up {opacity:0; transform:translateY(30px); transition:0.8s;}
+    .fade-up.visible {opacity:1; transform:translateY(0);}
+  </style>
 </head>
 <body>
 
@@ -122,144 +143,151 @@ footer a:hover {color:white;}
 </nav>
 
 <div class="container">
-  <div id="home-page" class="page fade-up">
-    <section id="about">
-      <h2>عن المدرسة</h2>
-      <p>مدرسة النجاة بنين هي مؤسسة تعليمية رائدة في الكويت، تقدم برامج تعليمية متكاملة للمرحلتين المتوسطة والثانوية، وتركز على الجمع بين التعليم الأكاديمي وغرس القيم الإسلامية.</p>
-      <ul>
-        <li>تحقيق التفوق الأكاديمي والتميز السلوكي</li>
-        <li>تنمية مهارات الطلاب الفكرية والاجتماعية</li>
-        <li>تعزيز الانتماء الوطني والقيمي</li>
-      </ul>
-    </section>
 
-    <section id="gallery-section">
-      <h2>معرض الصور</h2>
-      <div class="gallery">
-        <img src="images/positvity for alnajat.png" alt="القيم التربوية" loading="lazy">
-        <img src="images/quran.PNG" alt="طلاب في نشاط مدرسي" loading="lazy">
-        <img src="images/antkabt 3.jpg" alt="نشاط دراسي" loading="lazy">
-        <img src="images/positvity for alnajat2.png" alt="رحله مدرسيه" loading="lazy">
-        <img src="images/positvity for alnajat3.png" alt="انتخابات طلاب" loading="lazy">
-        <img src="images/alnajat antkabt2.jpg" alt="صورة جديدة" loading="lazy">
-      </div>
-    </section>
+<div id="home-page" class="page fade-up">
+  <section id="about">
+    <h2>عن المدرسة</h2>
+    <p>مدرسة النجاة بنين هي مؤسسة تعليمية رائدة في الكويت، تقدم برامج تعليمية متكاملة للمرحلتين المتوسطة والثانوية، وتركز على الجمع بين التعليم الأكاديمي وغرس القيم الإسلامية.</p>
+    <ul>
+      <li>تحقيق التفوق الأكاديمي والتميز السلوكي</li>
+      <li>تنمية مهارات الطلاب الفكرية والاجتماعية</li>
+      <li>تعزيز الانتماء الوطني والقيمي</li>
+    </ul>
+  </section>
 
-    <section id="activities-section">
-      <h2>الأنشطة</h2>
-      <div class="gallery">
-        <img src="images/alnajat antkabt.jpg" alt="انتخابات الطالب" loading="lazy">
-        <img src="images/trip.PNG" alt="نشاط رحلة" loading="lazy">
-        <img src="images/student.PNG" alt="تفوق" loading="lazy">
-        <img src="images/manger.PNG" alt="اجتماع" loading="lazy">
-        <img src="images/alnajat 2.PNG" alt="نشاط 1" loading="lazy">
-        <img src="images/football.PNG" alt="نشاط 2" loading="lazy">
-      </div>
-    </section>
+  <section id="gallery-section">
+    <h2>معرض الصور</h2>
+    <div class="gallery">
+      <img src="images/positvity for alnajat.png" alt="القيم التربوية" loading="lazy">
+      <img src="images/quran.PNG" alt="طلاب في نشاط مدرسي" loading="lazy">
+      <img src="images/antkabt 3.jpg" alt="نشاط دراسي" loading="lazy">
+      <img src="images/positvity for alnajat2.png" alt="رحله مدرسيه" loading="lazy">
+      <img src="images/positvity for alnajat3.png" alt="انتخابات طلاب" loading="lazy">
+      <img src="images/alnajat antkabt2.jpg" alt="صورة جديدة" loading="lazy">
+    </div>
+  </section>
 
-    <section id="news-section">
-      <h2>الأخبار والفعاليات</h2>
-      <div class="news-grid">
-        <div class="news-card" onclick="showPage('prayer-article')">
-          <img src="images/alnajat logo.jpg" alt="الالتزام بالصلاة" loading="lazy">
-          <div class="content">
-            <h3>الالتزام بالصلاة في مدرسة النجاة</h3>
-            <p>حرصت المدرسة على تعزيز الالتزام بالصلاة بين الطلاب.</p>
-            <span class="date"><i class="fa-regular fa-calendar"></i> 19 أكتوبر 2025</span>
-          </div>
+  <section id="activities-section">
+    <h2>الأنشطة</h2>
+    <p>تنظم المدرسة مجموعة من الأنشطة اللاصفية التي تسهم في بناء شخصية الطالب المتكاملة.</p>
+    <div class="gallery">
+      <img src="images/alnajat antkabt.jpg" alt="انتخابات الطالب لعام 2025-2026" loading="lazy">
+      <img src="images/trip.PNG" alt="نشاط رحلة" loading="lazy">
+      <img src="images/student.PNG" alt="تفوق" loading="lazy">
+      <img src="images/manger.PNG" alt="اجتماع" loading="lazy">
+      <img src="images/alnajat 2.PNG" alt="نشاط 1" loading="lazy">
+      <img src="images/football.PNG" alt="نشاط 2" loading="lazy">
+    </div>
+  </section>
+
+  <section id="news-section">
+    <h2>الأخبار والفعاليات</h2>
+    <div class="news-grid">
+      <div class="news-card" onclick="showPage('prayer-article')">
+        <img src="images/alnajat logo.jpg" alt="الالتزام بالصلاة">
+        <div class="content">
+          <h3>الالتزام بالصلاة في مدرسة النجاة</h3>
+          <p>حرصت المدرسة على تعزيز الالتزام بالصلاة بين الطلاب.</p>
+          <span class="date"><i class="fa-regular fa-calendar"></i> 19 أكتوبر 2025</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact-section">
-      <h2>اتصل بنا</h2>
-      <p><strong>العنوان:</strong> قطعة 10، شارع المغيرة بن شعبة، السالمية، الكويت</p>
-      <p><strong>الهاتف:</strong> +965 25619812 / +965 25619814</p>
-      <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@alnajatkw.edu.kw">info@alnajatkw.edu.kw</a></p>
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.89!2d48.0699!3d29.3205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d6904a54d6d%3A0x638294a29a5a73a!2z2YXYs9iq2LTZgq9mB2KfZhNmK2YjYqtmF2YTYqQ!5e0!3m2!1sar!2skw!4v1700000000000!5m2!1sar!2skw" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </section>
+  <section id="contact-section">
+    <h2>اتصل بنا</h2>
+    <p><strong>العنوان:</strong> قطعة 10، شارع المغيرة بن شعبة، السالمية، الكويت</p>
+    <p><strong>الهاتف:</strong> +965 25619812 / +965 25619814</p>
+    <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@alnajatkw.edu.kw">info@alnajatkw.edu.kw</a></p>
+
+    <h3>موقعنا على الخريطة</h3>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.89!2d48.0699!3d29.3205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9d6904a54d6d%3A0x638294a29a5a73a!2z2YXYs9iq2LTZgq9mB2KfZhNmK2YjYqtmF2YTYqQ!5e0!3m2!1sar!2skw!4v1700000000000!5m2!1sar!2skw"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+</div>
+
+<div id="prayer-article" class="page hidden fade-up">
+  <h2>أهمية الصلاة وفوائدها</h2>
+  <p>الصلاة ركن أساسي من أركان الإسلام ووسيلة لتعزيز الانضباط الروحي والأخلاقي للطلاب. تساعد الصلاة على تنمية التركيز، والهدوء النفسي، وغرس القيم الإسلامية منذ الصغر.</p>
+  <p>فوائد الصلاة عديدة، منها تقوية الانتماء الديني، تحسين الصحة النفسية والجسدية، وتعليم الصبر والانضباط.</p>
+
+  <h3>معرض الصور</h3>
+  <div class="gallery">
+    <img src="images/alnajat pray.jpg" alt="صورة الصلاة 1" loading="lazy">
+    <img src="images/alnajat pray 2 !.jpg" alt="صورة الصلاة 2" loading="lazy">
+    <img src="images/alnajat pray 3!.jpg" alt="صورة الصلاة 3" loading="lazy">
   </div>
 
-  <div id="prayer-article" class="page hidden fade-up">
-    <h2>أهمية الصلاة وفوائدها</h2>
-    <p>الصلاة ركن أساسي من أركان الإسلام ووسيلة لتعزيز الانضباط الروحي والأخلاقي للطلاب.</p>
-    <p>فوائد الصلاة عديدة، منها تقوية الانتماء الديني، تحسين الصحة النفسية والجسدية، وتعليم الصبر والانضباط.</p>
-
-    <h3>معرض الصور</h3>
-    <div class="gallery">
-      <img src="images/alnajat pray.jpg" alt="صورة الصلاة 1" loading="lazy">
-      <img src="images/alnajat pray 2 !.jpg" alt="صورة الصلاة 2" loading="lazy">
-      <img src="images/alnajat pray 3!.jpg" alt="صورة الصلاة 3" loading="lazy">
-    </div>
-
-    <h3>الفيديو التوضيحي</h3>
-    <div style="display:flex; justify-content:center; margin-top:15px;">
-      <video controls style="width:45%; max-width:300px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15);">
-        <source src="images/video_2025-10-19_22-17-02.mp4" type="video/mp4">
-        المتصفح لا يدعم عرض الفيديو.
-      </video>
-    </div>
-
-    <button onclick="showPage('home-page'); setActive(document.querySelector('nav a:nth-child(1)'))" 
-            style="margin-top:15px; padding:10px 20px; background-color:var(--main-blue); color:white; border:none; border-radius:6px; cursor:pointer;">
-      الصفحة الرئيسية
-    </button>
+  <h3>الفيديو التوضيحي</h3>
+  <div style="display:flex; justify-content:center; margin-top:15px;">
+    <video controls>
+      <source src="images/video_2025-10-19_22-17-02.mp4" type="video/mp4">
+      المتصفح لا يدعم عرض الفيديو.
+    </video>
   </div>
+
+  <button onclick="showPage('home-page'); setActive(document.querySelector('nav a:nth-child(1)'))" 
+          style="margin-top:15px; padding:10px 20px; background-color:var(--main-blue); color:white; border:none; border-radius:6px; cursor:pointer;">
+    الصفحة الرئيسية
+  </button>
 </div>
 
 <footer>
   <p>© 2025 مدرسة النجاة بنين – السالمية | عمل الطالب: براء محمد أحمد هاشم | جميع الحقوق محفوظة</p>
   <p>
     تابعنا على:
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-telegram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100090746634577&locale=ar_AR" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/alnajat_mbps" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://t.me/elnajatintermedaitBS" target="_blank"><i class="fab fa-telegram"></i></a>
   </p>
 </footer>
 
 <button id="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
-<button id="homeBtn" onclick="showPage('home-page'); setActive(document.querySelector('nav a:nth-child(1)'))"><i class="fa-solid fa-house"></i></button>
+<button id="homeBtn" onclick="showPage('home-page'); setActive(document.querySelector('nav a:nth-child(1)'))">
+  <i class="fa-solid fa-house"></i>
+</button>
 
 <script>
-const topBtn = document.getElementById("topBtn");
-const homeBtn = document.getElementById("homeBtn");
+  const topBtn = document.getElementById("topBtn");
+  const homeBtn = document.getElementById("homeBtn");
 
-window.addEventListener("scroll", () => {
-  if(window.scrollY > 300){ topBtn.classList.add('show'); homeBtn.classList.add('show'); }
-  else { topBtn.classList.remove('show'); homeBtn.classList.remove('show'); }
-});
-topBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); });
+  window.addEventListener("scroll", () => {
+    if(window.scrollY > 300){ topBtn.classList.add('show'); homeBtn.classList.add('show'); }
+    else { topBtn.classList.remove('show'); homeBtn.classList.remove('show'); }
+  });
+  topBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); });
 
-const faders = document.querySelectorAll('.fade-up');
-const appear = new IntersectionObserver(entries => {
-  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-}, { threshold: 0.2 });
-faders.forEach(fade => appear.observe(fade));
+  const faders = document.querySelectorAll('.fade-up');
+  const appear = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.2 });
+  faders.forEach(fade => appear.observe(fade));
 
-document.querySelectorAll('.gallery img').forEach(img => {
-  img.addEventListener('load', () => img.classList.add('loaded'));
-});
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('load', () => img.classList.add('loaded'));
+  });
 
-function showPage(id) {
-  document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
-  document.getElementById(id).classList.remove('hidden');
-  window.scrollTo({ top:0, behavior:'smooth' });
-}
-
-function showSection(sectionId) {
-  showPage('home-page');
-  const section = document.getElementById(sectionId);
-  if(section) {
-    setTimeout(() => { section.scrollIntoView({ behavior:'smooth', block:'start' }); }, 300);
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+    document.getElementById(id).classList.remove('hidden');
+    window.scrollTo({ top:0, behavior:'smooth' });
   }
-}
 
-function setActive(link) {
-  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-  link.classList.add('active');
-}
+  function showSection(sectionId) {
+    showPage('home-page');
+    const section = document.getElementById(sectionId);
+    if(section) {
+      setTimeout(() => { section.scrollIntoView({ behavior:'smooth', block:'start' }); }, 300);
+    }
+  }
+
+  function setActive(link) {
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    link.classList.add('active');
+  }
 </script>
 
 </body>
