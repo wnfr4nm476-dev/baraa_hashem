@@ -60,6 +60,7 @@
     p, ul {line-height:1.8; font-size:1.05em;}
     ul {list-style-type: square; padding-right:25px;}
 
+   
     .gallery {
       display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; margin-top:20px;
     }
@@ -91,6 +92,7 @@
     footer a {color:var(--accent); text-decoration:none; margin:0 8px; transition:color 0.3s;}
     footer a:hover {color:white;}
 
+    
     #topBtn, #homeBtn {
       position:fixed; bottom:25px; width:45px; height:45px;
       border:none; border-radius:50%; cursor:pointer; font-size:20px; z-index:999;
@@ -108,7 +110,7 @@
 
     #prayer-article video {
       width:45%;
-      max-width:500px;
+      max-width:300px;
       border-radius:12px;
       margin:15px auto;
       display:block;
@@ -156,12 +158,12 @@
   <section id="gallery-section">
     <h2>معرض الصور</h2>
     <div class="gallery">
-      <img src="images/positvity for alnajat.png" alt="القيم التربوية">
-      <img src="images/quran.PNG" alt="طلاب في نشاط مدرسي">
-      <img src="images/antkabt 3.jpg" alt="نشاط دراسي">
-      <img src="images/positvity for alnajat2.png" alt="رحله مدرسيه">
-      <img src="images/positvity for alnajat3.png" alt="انتخابات طلاب">
-      <img src="images/alnajat antkabt2.jpg" alt="صورة جديدة">
+      <img src="images/positvity for alnajat.png" alt="القيم التربوية" loading="lazy">
+      <img src="images/quran.PNG" alt="طلاب في نشاط مدرسي" loading="lazy">
+      <img src="images/antkabt 3.jpg" alt="نشاط دراسي" loading="lazy">
+      <img src="images/positvity for alnajat2.png" alt="رحله مدرسيه" loading="lazy">
+      <img src="images/positvity for alnajat3.png" alt="انتخابات طلاب" loading="lazy">
+      <img src="images/alnajat antkabt2.jpg" alt="صورة جديدة" loading="lazy">
     </div>
   </section>
 
@@ -169,12 +171,12 @@
     <h2>الأنشطة</h2>
     <p>تنظم المدرسة مجموعة من الأنشطة اللاصفية التي تسهم في بناء شخصية الطالب المتكاملة.</p>
     <div class="gallery">
-      <img src="images/alnajat antkabt.jpg" alt="انتخابات الطالب لعام 2025-2026">
-      <img src="images/trip.PNG" alt="نشاط رحلة">
-      <img src="images/student.PNG" alt="تفوق">
-      <img src="images/manger.PNG" alt="اجتماع">
-      <img src="images/alnajat 2.PNG" alt="نشاط 1">
-      <img src="images/football.PNG" alt="نشاط 2">
+      <img src="images/alnajat antkabt.jpg" alt="انتخابات الطالب لعام 2025-2026" loading="lazy">
+      <img src="images/trip.PNG" alt="نشاط رحلة" loading="lazy">
+      <img src="images/student.PNG" alt="تفوق" loading="lazy">
+      <img src="images/manger.PNG" alt="اجتماع" loading="lazy">
+      <img src="images/alnajat 2.PNG" alt="نشاط 1" loading="lazy">
+      <img src="images/football.PNG" alt="نشاط 2" loading="lazy">
     </div>
   </section>
 
@@ -214,9 +216,9 @@
 
   <h3>معرض الصور</h3>
   <div class="gallery">
-    <img src="images/alnajat pray.jpg" alt="صورة الصلاة 1">
-    <img src="images/alnajat pray 2 !.jpg" alt="صورة الصلاة 2">
-    <img src="images/alnajat pray 3!.jpg" alt="صورة الصلاة 3">
+    <img src="images/alnajat pray.jpg" alt="صورة الصلاة 1" loading="lazy">
+    <img src="images/alnajat pray 2 !.jpg" alt="صورة الصلاة 2" loading="lazy">
+    <img src="images/alnajat pray 3!.jpg" alt="صورة الصلاة 3" loading="lazy">
   </div>
 
   <h3>الفيديو التوضيحي</h3>
@@ -266,7 +268,6 @@
 
   document.querySelectorAll('.gallery img').forEach(img => {
     img.addEventListener('load', () => img.classList.add('loaded'));
-    img.src = img.src; // إعادة تحميل الصورة للتأكد من ظهورها فورًا
   });
 
   function showPage(id) {
@@ -279,7 +280,7 @@
     showPage('home-page');
     const section = document.getElementById(sectionId);
     if(section) {
-      requestAnimationFrame(() => { section.scrollIntoView({ behavior:'smooth', block:'start' }); });
+      setTimeout(() => { section.scrollIntoView({ behavior:'smooth', block:'start' }); }, 300);
     }
   }
 
